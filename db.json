@@ -1,0 +1,53 @@
+{
+  "mlCards": [
+    {
+      "id": 1,
+      "name": "Content Moderation",
+      "description": "Content moderation is the process of automatically analyzing user-generated content to determine if it meets certain criteria or violates community guidelines. The process of content moderation involves training a deep neural network on a large dataset of labeled examples to recognize patterns and features within the content that are indicative of specific categories such as hate speech, nudity, or violence. Once the network is trained, it can be used to classify new content and flag any that violates the guidelines. TensorFlow JS provides pre-trained models such as Toxicity Classifier that can be used for content moderation tasks with minimal configuration. Alternatively, custom content moderation models can be trained using the TensorFlow JS API.",
+      "img_url": "https://media.licdn.com/dms/image/C4E12AQH4QEM_l3pMUg/article-cover_image-shrink_720_1280/0/1648577278016?e=2147483647&v=beta&t=5qreBd209XA5oziN0McGi4fwXqxEdGtJksBBJbL1nzI",
+      "use_cases": ["Social media platforms", "Online marketplaces"]
+    },
+    {
+      "id": 2,
+      "name": "Image Classification",
+      "description": "Image classification is the process of categorizing an image into one of several predefined classes or categories using machine learning techniques. The process of image classification involves training a deep neural network on a set of labeled images to recognize patterns and features within those images that are characteristic of a particular class. Once the network is trained, it can be used to classify new images into the same set of classes. TensorFlow JS provides pre-trained models such as MobileNet and ResNet that can be used for image classification tasks with minimal configuration. Alternatively, custom image classification models can be trained using the TensorFlow JS API.",
+      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQat8lie-iWqamoWINQX1paxriREZV1t1Sawg&usqp=CAU",
+      "use_cases": ["E-commerce websites", "Image search engines"]
+    },
+    {
+      "id": 3,
+      "name": "Object Detection",
+      "description": "Object detection is the process of identifying and locating objects within an image or video using machine learning techniques. The process of object detection involves dividing an image into regions of interest, extracting features from those regions, and then classifying those features to identify the objects within the image. TensorFlow JS provides pre-trained models such as the COCO-SSD model that can be used for object detection tasks with minimal configuration. Alternatively, custom object detection models can be trained using the TensorFlow JS API.",
+      "img_url": "https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/627d124572023b6948b6cdff_60ed9a4e09e2c648f1b8a013_object-detection-cover.png",
+      "use_cases": ["Self-driving cars", "Security cameras"]
+    },
+    {
+      "id": 4,
+      "name": "Style Transfer",
+      "description": "Style transfer is the process of applying the style of one image to the content of another image using machine learning techniques. The process of style transfer involves training a deep neural network on a set of images to learn the style of a particular image and then using that model to apply the style to a new image. This is achieved by optimizing the content image to match the style of the reference image while preserving the content information. TensorFlow JS provides pre-trained models such as Style Transfer that can be used for style transfer tasks with minimal configuration. Alternatively, custom style transfer models can be trained using the TensorFlow JS API.",
+      "img_url": "https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/613ebc713d78bd6d64e763b8_IJBbdBDp67rtR1bfd0GVlcu5kQIIOX5ExT3I8w7f7UGV90_-SwP-lOfF61k6Npq_4SqPiXnQnVgRXwFmNe8c0OctDfb0p_ScrJGWNkgu7S1UKZmk_BsYb-_C11OGXciC8IjqMfO2%3Ds0.png",
+      "use_cases": ["Artistic images", "Artistic videos"]
+    },
+    {
+      "id": 5,
+      "name": "Speech Recognition",
+      "description": "Speech recognition is the process of converting spoken words into written text using machine learning techniques. The process of speech recognition involves training a deep neural network on a large dataset of audio recordings and their corresponding transcriptions to recognize patterns and features within the speech signal. Once the network is trained, it can be used to transcribe new audio recordings into text. TensorFlow JS provides pre-trained models such as Speech Commands and DeepSpeech that can be used for speech recognition tasks with minimal configuration. Alternatively, custom speech recognition models can be trained using the TensorFlow JS API.",
+      "img_url": "https://i.ytimg.com/vi/Hs1FAeiiCSk/maxresdefault.jpg",
+      "use_cases": ["Virtual assistants", "Speech-to-text applications"]
+    },
+    {
+      "id": 6,
+      "name": "Natural Language Processing",
+      "description": "Natural language processing is the process of using machine learning techniques to analyze, understand, and generate natural language text. The process of natural language processing involves training a deep neural network on a large dataset of text to recognize patterns and features within the language. This can include tasks such as sentiment analysis, named entity recognition, and text classification. Once the network is trained, it can be used to analyze or generate new text. TensorFlow JS provides pre-trained models such as Universal Sentence Encoder and BERT that can be used for natural language processing tasks with minimal configuration. Alternatively, custom natural language processing models can be trained using the TensorFlow JS API",
+      "img_url": "https://miro.medium.com/v2/resize:fit:960/0*xLRsbQ02J7sQpNNy",
+      "use_cases": ["Chatbots", "Customer service applications"]
+    },
+    {
+      "id": 6,
+      "name": "Semantic Segmentation",
+      "description": "Semantic segmentation is the process of dividing an image into different regions or segments and assigning each pixel to a particular class or category using machine learning techniques. The process of semantic segmentation involves training a deep neural network on a large dataset of images with pixel-level annotations to recognize patterns and features within the image that are indicative of specific classes such as objects, background, or edges. Once the network is trained, it can be used to segment new images into the same set of classes. TensorFlow JS provides pre-trained models such as DeepLab and MobileNet that can be used for semantic segmentation tasks with minimal configuration. Alternatively, custom semantic segmentation models can be trained using the TensorFlow JS API.",
+      "img_url": "https://www.jeremyjordan.me/content/images/2018/05/Screen-Shot-2018-05-17-at-7.42.16-PM.png",
+      "use_cases": ["Object Detection", "Image Editing", "Medical Image Analysis"]
+    }
+  ]
+}

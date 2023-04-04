@@ -1,5 +1,3 @@
-let modelCardsDiv = document.getElementById("model-menu");
-
 fetch("http://localhost:3000/mlCards")
     .then((res) => res.json())
     .then((mlCards) => {
@@ -7,26 +5,53 @@ fetch("http://localhost:3000/mlCards")
         renderModelCards(modelCards)
     })
     
+/*
+let image1 = document.getElementById("image1")
+let image2 = document.getElementById("image2")
+let image3 = document.getElementById("image3")
+let image4 = document.getElementById("image4")
+let image5 = document.getElementById("image5")
+let image6 = document.getElementById("image6")
+let image7 = document.getElementById("image7")
 
-let p1 = document.querySelector("p")
+*/
+
 let imageSlider = document.getElementById("imageSlider")
 let cardArray = []
+/*
+image1.src = cardArray[0] 
+image2.src = cardArray[1]
+image3.src = cardArray[2]
+image4.src = cardArray[3]
+image5.src = cardArray[4]
+image6.src = cardArray[5]
+image6.src = cardArray[6]
+*/
 imageSlider.append(cardArray)
     
 function renderModelCards(modelCards) {
     modelCards.forEach((card) => {
         
-        let cardName = document.createElement("h2")
-        let cardDesc = document.createElement("p")
-        let cardUseCases = document.createElement("li")
+        let cardName = document.getElementById("detail-name")
+        let cardDesc = document.getElementById("detail-description")
+        let cardDetailImg = document.getElementById("detail-image")
+        let cardUseCases = document.getElementById("detail-use-cases")
         let cardImg = document.createElement("img")
+        let cardSlide = document.createElement("div")
         cardName.textContent = card.name
         cardDesc.textContent = card.description
         cardUseCases.textContent = card.use_cases
         cardImg.src = card.img_url
         cardImg.height = 100
+        cardDetailImg.height = 400
         cardImg.addEventListener("click", () => {
-            console.log("clicked!")
+            console.log("clicked!",
+            cardName.textContent = card.name,
+            cardDesc.textContent = card.description,
+            cardUseCases.textContent = card.use_cases, 
+            cardDetailImg.src = card.gif_url
+
+            )
         })        
         cardArray.push(cardImg)
         imageSlider.append(cardImg)
@@ -34,7 +59,7 @@ function renderModelCards(modelCards) {
 }
 
 
-/* image slider */
+/* image slider
 
 function Slider() {
   const carouselSlides = document.querySelectorAll('.slide');
@@ -80,6 +105,8 @@ function Slider() {
   });
 };
 Slider();
+
+*/
 
 /* model code */
 

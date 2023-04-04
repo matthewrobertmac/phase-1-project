@@ -1,4 +1,12 @@
 /* MacFarlane custom css */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* MacFarlane custom css */
 * {
   margin: 0;

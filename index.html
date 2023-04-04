@@ -9,28 +9,40 @@
   <body>
     <header>
       <h3>TensorFlow JS Works Great For:</h3>
+      <div class="container" id="imageSlider">
     </header>
   
     <!-- Model Cards Menu -->
     <div id="model-menu">
       <!-- Model Card Images Here -->
     </div>
+    <!-- 
     <div id="image-slider">
       <h2>Image slider</h2>
       <div class="slider">
         <div class="slide">
-              <img src="https://thumbs.gfycat.com/IgnorantSkinnyHamadryad-size_restricted.gif" alt="Photo1"/>
+              <img id="image1" src="https://thumbs.gfycat.com/IgnorantSkinnyHamadryad-size_restricted.gif" alt="Photo1"/>
           </div>
         <div class="slide">
-              <img src="https://www.bpesquet.fr/mlhandbook/_images/style_transfer_animated.gif" alt="Photo3"/>
+              <img id = "image2" src="https://www.bpesquet.fr/mlhandbook/_images/style_transfer_animated.gif" alt="Photo3"/>
           </div> 
         <div class="slide">
-              <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo2"/>
+              <img id="image3" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo2"/>
           </div>
         <div class="slide">
-              <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
+              <img id="image4" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
           </div> 
-  
+          <div class="slide">
+            <img id="image5" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
+        </div> 
+        <div class="slide">
+          <img id="image6" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
+      </div> 
+      <div class="slide">
+        <img id="image7" src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="Photo3"/>
+    </div> 
+    
+
           <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
           <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
         
@@ -42,20 +54,22 @@
         <span class="dot" data-slide="3"></span>
       </div>
     </div>
-  
+  -->
+
     <!-- Model Card Details -->
     <div id="model-detail">
-      <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-      <h2 class="name">Insert Name of ML Type Here</h2>
-      <h3 class="restaurant">Insert Brief Description Here</h3>
+      <h2 id="detail-name" class="name">Insert Name of ML Type Here</h2>
+      <img id="detail-image" class="center" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+      <h3 class="description">Description</h3>
+      <p id="detail-description">Model Description goes here!</p>
     </div>
   
     <h3>Comment:</h3>
-    <p id='use-case-display'>
+    <p id='detail-use-cases'>
       Insert use-case here
     </p>
-    <div class="container" id="imageSlider">
     </div>
+
     <h1>TensorFlow.js brings machine learning to the browser</h1>
 
     <p>TensorFlow.js democratizes machine learning by bringing it to the browser and making it accessible to developers who work regularly with JavaScript. It enables web developers to build and train machine learning models directly in JavaScript, and use these models in web applications. One of the key benefits of TensorFlow JS is that it requires no special installation or setup and will run on any web browser.</p> 

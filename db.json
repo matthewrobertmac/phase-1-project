@@ -2,14 +2,6 @@
   "mlCards": [
     {
       "id": 1,
-      "name": "Content Moderation",
-      "description": "Content moderation is the process of automatically analyzing user-generated content to determine if it meets certain criteria or violates community guidelines. The process of content moderation involves training a deep neural network on a large dataset of labeled examples to recognize patterns and features within the content that are indicative of specific categories such as hate speech, nudity, or violence. Once the network is trained, it can be used to classify new content and flag any that violates the guidelines. TensorFlow JS provides pre-trained models such as Toxicity Classifier that can be used for content moderation tasks with minimal configuration. Alternatively, custom content moderation models can be trained using the TensorFlow JS API.",
-      "img_url": "https://txt.cohere.ai/content/images/2022/05/cls_mod_3.png",
-      "gif_url": "https://thehustle.co/wp-content/uploads/2020/06/2020-News-Brief-Testing_2020-06-09T010131.265Z.gif",
-      "use_cases": ["Social media platforms", "Online marketplaces"]
-    },
-    {
-      "id": 2,
       "name": "Image Classification",
       "description": "Image classification is the process of categorizing an image into one of several predefined classes or categories using machine learning techniques. The process of image classification involves training a deep neural network on a set of labeled images to recognize patterns and features within those images that are characteristic of a particular class. Once the network is trained, it can be used to classify new images into the same set of classes. TensorFlow JS provides pre-trained models such as MobileNet and ResNet that can be used for image classification tasks with minimal configuration. Alternatively, custom image classification models can be trained using the TensorFlow JS API.",
       "img_url": "https://lh5.googleusercontent.com/0tRwW_N8aqEBR2F-a6ggpbveaBw-20mYHdKA_EIPWfIHz7QisxcIJUdMtMYfC6g3u-1GuCOgeXd4nBfdzv9oYxprL_roc2msDIu5HrBVNlnybw_gnLP-jLo279pAi7MU5JppM7FlQuvROjvWDexxQxc",
@@ -17,7 +9,7 @@
       "use_cases": ["E-commerce websites", "Image search engines"]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Object Detection",
       "description": "Object detection is the process of identifying and locating objects within an image or video using machine learning techniques. The process of object detection involves dividing an image into regions of interest, extracting features from those regions, and then classifying those features to identify the objects within the image. TensorFlow JS provides pre-trained models such as the COCO-SSD model that can be used for object detection tasks with minimal configuration. Alternatively, custom object detection models can be trained using the TensorFlow JS API.",
       "img_url": "https://s3.amazonaws.com/a-us.storyblok.com/f/1002816/8303efae90/620d55c7f609a68b78e38ad3_boundingbox_blog.jpg",
@@ -25,15 +17,15 @@
       "use_cases": ["Self-driving cars", "Security cameras"]
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Style Transfer",
       "description": "Style transfer is the process of applying the style of one image to the content of another image using machine learning techniques. The process of style transfer involves training a deep neural network on a set of images to learn the style of a particular image and then using that model to apply the style to a new image. This is achieved by optimizing the content image to match the style of the reference image while preserving the content information. TensorFlow JS provides pre-trained models such as Style Transfer that can be used for style transfer tasks with minimal configuration. Alternatively, custom style transfer models can be trained using the TensorFlow JS API.",
       "img_url": "https://cdna.artstation.com/p/assets/images/images/045/645/576/large/peter-dravecky-screenshot-119.jpg?1643207052",
-      "gif_url": "https://www.bpesquet.fr/mlhandbook/_images/style_transfer_animated.gif",
+      "gif_url": "https://thumbs.gfycat.com/BaggyScornfulChafer-size_restricted.gif",
       "use_cases": ["Artistic images", "Artistic videos"]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Speech Recognition",
       "description": "Speech recognition is the process of converting spoken words into written text using machine learning techniques. The process of speech recognition involves training a deep neural network on a large dataset of audio recordings and their corresponding transcriptions to recognize patterns and features within the speech signal. Once the network is trained, it can be used to transcribe new audio recordings into text. TensorFlow JS provides pre-trained models such as Speech Commands and DeepSpeech that can be used for speech recognition tasks with minimal configuration. Alternatively, custom speech recognition models can be trained using the TensorFlow JS API.",
       "img_url": "https://developer-blogs.nvidia.com/wp-content/uploads/2022/08/speech-to-text-remixed.png",
@@ -41,7 +33,7 @@
       "use_cases": ["Virtual assistants", "Speech-to-text applications"]
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Natural Language Processing",
       "description": "Natural language processing is the process of using machine learning techniques to analyze, understand, and generate natural language text. The process of natural language processing involves training a deep neural network on a large dataset of text to recognize patterns and features within the language. This can include tasks such as sentiment analysis, named entity recognition, and text classification. Once the network is trained, it can be used to analyze or generate new text. TensorFlow JS provides pre-trained models such as Universal Sentence Encoder and BERT that can be used for natural language processing tasks with minimal configuration. Alternatively, custom natural language processing models can be trained using the TensorFlow JS API",
       "img_url": "https://knowledge.dataiku.com/latest/_images/nlp-field.png",
@@ -55,6 +47,15 @@
       "img_url": "https://alwaysai.co/docs/_images/is.png",
       "gif_url": "https://miro.medium.com/v2/resize:fit:1400/1*QKfIOzB-N1GrhULIvVxkQg.gif",
       "use_cases": ["Object Detection", "Image Editing", "Medical Image Analysis"]
+    },
+    {
+      "id": 7,
+      "name": "Content Moderation",
+      "description": "Content moderation is the process of automatically analyzing user-generated content to determine if it meets certain criteria or violates community guidelines. The process of content moderation involves training a deep neural network on a large dataset of labeled examples to recognize patterns and features within the content that are indicative of specific categories such as hate speech, nudity, or violence. Once the network is trained, it can be used to classify new content and flag any that violates the guidelines. TensorFlow JS provides pre-trained models such as Toxicity Classifier that can be used for content moderation tasks with minimal configuration. Alternatively, custom content moderation models can be trained using the TensorFlow JS API.",
+      "img_url": "https://txt.cohere.ai/content/images/2022/05/cls_mod_3.png",
+      "gif_url": "https://thehustle.co/wp-content/uploads/2020/06/2020-News-Brief-Testing_2020-06-09T010131.265Z.gif",
+      "use_cases": ["Social media platforms", "Online marketplaces"]
     }
+
   ]
 }

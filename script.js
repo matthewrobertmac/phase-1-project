@@ -208,3 +208,40 @@ function predictWebcam() {
     window.requestAnimationFrame(predictWebcam);
   });
 }
+
+let check = document.getElementById(`tick`)
+let notChecked = document.getElementById(`agree_chk_error`)
+// let validateForm = document.cr
+function Box(check) {
+}
+
+console.log(notChecked)
+console.log(check)
+
+
+// check.addEventListener("click", function() {
+  
+//   let= getElementById(`terms`)
+
+  let termsConditions = document.getElementById(`alert`)
+  
+  termsConditions.addEventListener("click", function(e) {
+    e.preventDefault()
+    alert(`rrrr`)
+  })
+console.log(`ffff`)
+let submitBttn = document.getElementById(`terms`)
+
+console.log(submitBttn)
+submitBttn.addEventListener("click", (e) => {
+  e.preventDefault();
+  let name = document.getElementsByName(`user_name`)[0].value
+  let email = document.getElementsByName(`user_email`)[0].value
+
+  console.log(name,email)
+  let post = document.createElement("li"); //creating li for each comment object
+  post.textContent = name; // setting the textcontent from the comment object
+
+  let currentUser = document.getElementById(`textdiv`)
+  currentUser.append(post) 
+})

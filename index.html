@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introduction to TensorFlow JS</title>
+    <title>Experience TensorFlow JS</title>
     <link rel="icon" type="image/x-icon" href="https://codelabs.developers.google.com/static/codelabs/tensorflowjs-object-detection/img/1aee0ede85885520.png">
     <meta charset="utf-8">
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
   </head>  
   <body>
-    <article>
-      <header>
-        <h2>TensorFlow JS Brings Machine Learning to the Browser</h2>
-        <p>Published on April 7, 2023</p>
-      </header>
-      <section>
-        <p>TensorFlow JS is a powerful open-source library that allows developers to integrate machine learning into their JavaScript applications. It is built on top of the popular TensorFlow library, which is widely used for machine learning in other programming languages such as Python. With TensorFlow JS, developers can perform various tasks such as building custom models, training existing models, and analyzing complex data.</p>
-        <img src="https://2.bp.blogspot.com/-ra9KIxEiSXo/XhOOe_DKOWI/AAAAAAAACRc/N-QRB3aXFVcCqNXxw_D98TFtY5w0mq77gCLcBGAsYHQ/s1600/tensorflowjs.png" alt="My first image">
-        <p>One of the key advantages of TensorFlow JS is its ability to run machine learning models directly in the browser. This makes it possible to build intelligent web applications that can perform complex tasks without needing a server-side backend. For instance, TensorFlow JS can be used for image recognition, allowing you to classify images on the client-side without the need to send the images to a server. Additionally, natural language processing can be used to build chatbots or sentiment analysis tools that can run directly in the browser.</p>
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*8R4nDDde-bgPmSmeEKsdLA.png" alt="My second image">
-        <p>TensorFlow JS is also an excellent choice for server-side applications. With its ability to analyze large datasets and make predictions based on that data, TensorFlow JS is particularly useful in industries such as finance, healthcare, and marketing where data analysis plays a critical role in decision making. For example, a healthcare organization could use TensorFlow JS to analyze electronic health records and predict patient outcomes, or a financial institution could use it to analyze customer data and identify potential fraud.</p>
-        <img src="https://imageio.forbes.com/blogs-images/bernardmarr/files/2016/03/Industry_4.0.png?format=png&width=600" alt="My third image">
-        <p>One of the most significant advantages of TensorFlow JS is its ease of use. The API is designed to be intuitive and easy to learn, even for developers who are new to machine learning. Furthermore, TensorFlow JS has extensive documentation, which makes it easy to get started with the library. Plus, because it's built on top of TensorFlow, developers can leverage the vast ecosystem of TensorFlow tools and libraries when building machine learning applications with TensorFlow JS.</p>
-      </section>
-    </article>
+    <!-- 
+    <form id="form">
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id"><br>
+    
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+    
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br>
+    
+      <label for="img_icon">Icon URL:</label>
+      <input type="text" id="img_icon" name="img_icon"><br>
+    
+      <label for="img_url">Image URL:</label>
+      <input type="text" id="img_url" name="img_url"><br>
+    
+      <label for="gif_url">GIF URL:</label>
+      <input type="text" id="gif_url" name="gif_url"><br>
+    
+      <label for="use_cases">Use Cases:</label>
+      <input type="text" id="use_cases" name="use_cases"><br>
+    
+      <input type="submit" value="Add Entry">
+    </form>
+    -->
+
     <header>
       <h3>TensorFlow JS Works Great For:</h3>
       <div class="container" id="imageSlider">
     </header>
-  
     <!-- Model Card Details -->
     <div id="model-detail">
-      <h2 id="detail-name" class="name">Insert Name of ML Type Here</h2>
+      <h2 id="detail-name" class="name">Image Classification</h2>
       <img id="detail-image" class="center" src="https://miro.medium.com/v2/resize:fit:1400/1*oB3S5yHHhvougJkPXuc8og.gif" alt="Insert Name Here" />
       <h3 class="description">Description</h3>
       <p id="detail-description">Image classification is the process of categorizing an image into one of several predefined classes or categories using machine learning techniques. The process of image classification involves training a deep neural network on a set of labeled images to recognize patterns and features within those images that are characteristic of a particular class. Once the network is trained, it can be used to classify new images into the same set of classes. TensorFlow JS provides pre-trained models such as MobileNet and ResNet that can be used for image classification tasks with minimal configuration. Alternatively, custom image classification models can be trained using the TensorFlow JS API.
@@ -43,29 +53,43 @@
       E-commerce websites, Image search engines
     </p>
     </div>
+  </section>
+  <section id="demos" class="invisible">
 
-    <h1>TensorFlow.js brings machine learning to the browser</h1>
+    <h2>Experience TensorFlow JS</h2>
+
+    <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+    
+    <div id="liveView" class="camView">
+      <button id="webcamButton">Enable Webcam</button>
+      <video id="webcam" autoplay muted width="640" height="480"></video>
+    </div>
+  </section>
+
+    <article>
+      <header>
+        <h2>TensorFlow JS Brings Machine Learning to the Browser</h2>
+
+      </header>
+      <section>
+        <h3>About TensorFlow JS</h3>
+        <p>TensorFlow JS is a powerful open-source library that allows developers to integrate machine learning into their JavaScript applications. It is built on top of the popular TensorFlow library, which is widely used for machine learning in other programming languages such as Python. With TensorFlow JS, developers can perform various tasks such as building custom models, training existing models, and analyzing complex data.</p>
+        <h3>Client-side Machine Learning</h3>
+
+        <p>One of the key advantages of TensorFlow JS is its ability to run machine learning models directly in the browser. This makes it possible to build intelligent web applications that can perform complex tasks without needing a server-side backend. For instance, TensorFlow JS can be used for image recognition, allowing you to classify images on the client-side without the need to send the images to a server. Additionally, natural language processing can be used to build chatbots or sentiment analysis tools that can run directly in the browser.</p>
+
+      </section>
+    </article>
+    <h3> TensorFlow JS: Democratizing Machine Learning</h3>
 
     <p>TensorFlow.js democratizes machine learning by bringing it to the browser and making it accessible to developers who work regularly with JavaScript. It enables web developers to build and train machine learning models directly in JavaScript, and use these models in web applications. One of the key benefits of TensorFlow JS is that it requires no special installation or setup and will run on any web browser.</p> 
 
+    <h3>Key Use Cases for TensorFlow JS</h3>
+
     <p>TensorFlow.js excels in areas such as content moderation, image classification, object detection, style transfer, speech recognition, natural language processing, and more.</p>
-    <section id="demos" class="invisible">
-
-      <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
-      
-      <div id="liveView" class="camView">
-        <button id="webcamButton">Enable Webcam</button>
-        <video id="webcam" autoplay muted width="640" height="480"></video>
-      </div>
-    </section>
-
-    <!-- Import TensorFlow.js library -->
-    <script src="./tfjs.js" type="text/javascript"></script>
-    <!-- Load the coco-ssd model to use to recognize things in images -->
-    <script src="./coco-ssd.js"></script>
+    <div id="textdiv"></div>
     
-    <!-- Import the page's JavaScript to do some stuff -->
-    <script src="./script.js" defer></script>
+
 
 
     <div class="p-3">
@@ -77,9 +101,9 @@
         Can't proceed as you didn't agree to the terms! -->
         </div>
         </div>
-          <div id="textdiv"> 
+          <div id="submitDiv"> 
           <!-- <input type="submit" name="submit" value="Submit" disabled id="terms"/> -->
-          <button type="submit" class="btn btn1" name="terms" disabled id="terms">myButtn</button>
+          <button type="submit" class="btn btn1" name="terms" disabled id="terms">Schedule a free consultation</button>
           </div>
         </form>
         <form id="contact-form">
@@ -106,4 +130,13 @@
 
       </div>
   </body>
+      <!-- Import TensorFlow.js library -->
+      <script src="./tfjs.js" type="text/javascript"></script>
+      <!-- Load the coco-ssd model to use to recognize things in images -->
+      <script src="./coco-ssd.js"></script>
+      
+      <!-- Import the page's JavaScript to do some stuff -->
+      <script src="./script.js" defer></script>
+  
+  <link rel="stylesheet" href="./style.css">
 </html>

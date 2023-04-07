@@ -1,99 +1,62 @@
 /* MacFarlane custom css */
-* {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-}
 
-body {
-  padding: 1rem;
-  text-align: center;
-  background-color: #fafafa;
+img#tensorflowLogo {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: center;
   align-items: center;
 }
 
-header {
-  padding: 0.5rem;
-  width: 100%;
-  color: white;
-  background-color: black;
+#textdiv {
+  /* The image used */
+  background-image: url("https://blog.paperspace.com/content/images/2021/01/paperspace-scaled-yolov4.001.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#model-menu {
-  display: flex;
-  overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-#model-menu img {
-  flex: 0 1 auto;
-  height: 150px;
-  margin-right: 0.5rem;
-  cursor: pointer;
-}
-
-#model-menu img:last-child {
-  margin-right: 0;
-}
-
-#model-detail {
-  position: relative;
-}
-
+/* MacFarlane custom css */
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  position: center;
+  box-sizing: inherit;
+}
+html {
+  font-size: 1rem;
   box-sizing: border-box;
 }
-
 body {
-  padding: 1rem;
-  text-align: center;
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex: auto;
+  width: 95%;
+  height: 95%;
+  color: #272727;
+  line-height: 1.9;
+  background-color: #f7f5f5;
+  font-family:Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.5;
 }
 
-header {
-  padding: 0.5rem;
-  width: 100%;
-  color: white;
-  background-color: black;
+button .fas{
+    color: rgba(255, 255, 255, .5);
 }
-
-#model-menu {
-  display: flex;
-  overflow-x: auto;
-  margin: 1rem 0;
-  max-width: calc(100vw - 2rem);
-}
-
-#model-menu img {
-  flex: 0 1 auto;
-  height: 150px;
-  margin-right: 0.5rem;
-  cursor: pointer;
-}
-
-#model-menu img:last-child {
-  margin-right: 0;
-}
-
-#model-detail {
-  position: relative;
-}
-
-
-  /* DEFAULTS BELOW, CHANGE! */
-
-
-
 
 body {
     font-family: helvetica, arial, sans-serif;
@@ -148,3 +111,5 @@ body {
     position: absolute;
   }
   
+
+  /* DEFAULTS BELOW, CHANGE! */

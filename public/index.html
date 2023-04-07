@@ -1,36 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Introduction to TensorFlow JS</title>
+    <title>Experience TensorFlow JS</title>
+    <link rel="icon" type="image/x-icon" href="https://codelabs.developers.google.com/static/codelabs/tensorflowjs-object-detection/img/1aee0ede85885520.png">
     <meta charset="utf-8">
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
   </head>  
   <body>
-    <div class="container" id="imageSlider">
+    <!-- 
+    <form id="form">
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id"><br>
+    
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+    
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br>
+    
+      <label for="img_icon">Icon URL:</label>
+      <input type="text" id="img_icon" name="img_icon"><br>
+    
+      <label for="img_url">Image URL:</label>
+      <input type="text" id="img_url" name="img_url"><br>
+    
+      <label for="gif_url">GIF URL:</label>
+      <input type="text" id="gif_url" name="gif_url"><br>
+    
+      <label for="use_cases">Use Cases:</label>
+      <input type="text" id="use_cases" name="use_cases"><br>
+    
+      <input type="submit" value="Add Entry">
+    </form>
+    -->
+
+    <header>
+      <h3>TensorFlow JS Works Great For:</h3>
+      <div class="container" id="imageSlider">
+    </header>
+    <!-- Model Card Details -->
+    <div id="model-detail">
+      <h2 id="detail-name" class="name">Image Classification</h2>
+      <img id="detail-image" class="center" src="https://miro.medium.com/v2/resize:fit:1400/1*oB3S5yHHhvougJkPXuc8og.gif" alt="Insert Name Here" />
+      <h3 class="description">Description</h3>
+      <p id="detail-description">Image classification is the process of categorizing an image into one of several predefined classes or categories using machine learning techniques. The process of image classification involves training a deep neural network on a set of labeled images to recognize patterns and features within those images that are characteristic of a particular class. Once the network is trained, it can be used to classify new images into the same set of classes. TensorFlow JS provides pre-trained models such as MobileNet and ResNet that can be used for image classification tasks with minimal configuration. Alternatively, custom image classification models can be trained using the TensorFlow JS API.
+      </p>
+      <img id="another-image" src="https://lh5.googleusercontent.com/0tRwW_N8aqEBR2F-a6ggpbveaBw-20mYHdKA_EIPWfIHz7QisxcIJUdMtMYfC6g3u-1GuCOgeXd4nBfdzv9oYxprL_roc2msDIu5HrBVNlnybw_gnLP-jLo279pAi7MU5JppM7FlQuvROjvWDexxQxc"/>
     </div>
-    <h1>TensorFlow.js brings machine learning to the browser</h1>
+  
+    <h3>Use Cases:</h3>
+    <p id='detail-use-cases'>
+      E-commerce websites, Image search engines
+    </p>
+    </div>
+  </section>
+  <section id="demos" class="invisible">
+
+    <h2>Experience TensorFlow JS</h2>
+
+    <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+    
+    <div id="liveView" class="camView">
+      <button id="webcamButton">Enable Webcam</button>
+      <video id="webcam" autoplay muted width="640" height="480"></video>
+    </div>
+  </section>
+
+    <article>
+      <header>
+        <h2>TensorFlow JS Brings Machine Learning to the Browser</h2>
+
+      </header>
+      <section>
+        <h3>About TensorFlow JS</h3>
+        <p>TensorFlow JS is a powerful open-source library that allows developers to integrate machine learning into their JavaScript applications. It is built on top of the popular TensorFlow library, which is widely used for machine learning in other programming languages such as Python. With TensorFlow JS, developers can perform various tasks such as building custom models, training existing models, and analyzing complex data.</p>
+        <h3>Client-side Machine Learning</h3>
+
+        <p>One of the key advantages of TensorFlow JS is its ability to run machine learning models directly in the browser. This makes it possible to build intelligent web applications that can perform complex tasks without needing a server-side backend. For instance, TensorFlow JS can be used for image recognition, allowing you to classify images on the client-side without the need to send the images to a server. Additionally, natural language processing can be used to build chatbots or sentiment analysis tools that can run directly in the browser.</p>
+
+      </section>
+    </article>
+    <h3> TensorFlow JS: Democratizing Machine Learning</h3>
 
     <p>TensorFlow.js democratizes machine learning by bringing it to the browser and making it accessible to developers who work regularly with JavaScript. It enables web developers to build and train machine learning models directly in JavaScript, and use these models in web applications. One of the key benefits of TensorFlow JS is that it requires no special installation or setup and will run on any web browser.</p> 
 
+    <h3>Key Use Cases for TensorFlow JS</h3>
+
     <p>TensorFlow.js excels in areas such as content moderation, image classification, object detection, style transfer, speech recognition, natural language processing, and more.</p>
+    <div id="textdiv"></div>
     
-    <section id="demos" class="invisible">
 
-      <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
-      
-      <div id="liveView" class="camView">
-        <button id="webcamButton">Enable Webcam</button>
-        <video id="webcam" autoplay muted width="640" height="480"></video>
+
+
+    <div class="p-3">
+      <form onsubmit="return validateForm(this)" action="" method="post">
+        <!-- <div>
+        <input type="checkbox" name="agree" id="agree" value="yes" />
+        <label for="agree">I agree to the terms and conditions</label>
+        <div style="visibility:hidden; color:red" id="agree_chk_error">
+        Can't proceed as you didn't agree to the terms! -->
+        </div>
+        </div>
+          <div id="submitDiv"> 
+          <!-- <input type="submit" name="submit" value="Submit" disabled id="terms"/> -->
+          <button type="submit" class="btn btn1" name="terms" disabled id="terms">Schedule a free consultation</button>
+          </div>
+        </form>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <label>Name</label>
+          <input type="text" name="user_name">
+          <label>Email</label>
+          <input type="email" name="user_email">
+          <!-- <label>Message</label> -->
+          <!-- <textarea name="message"></textarea> -->
+          <!-- <input type="submit" value="Send"> -->
+      </form>
+        <td>
+          <input type="checkbox"  id="tick" onchange="document.getElementById('terms').disabled = !this.checked;" />
+          <td>
+           <p> I agree to the <a id="alert" href="terms.html"  target="_blank">Terms & Conditions</a></p>
+          </td>
+      </td>
+      </tr>
+      <td class="label1"></td>
+      <td align="right">
+          <button type="submit" class="btn btn1" name="terms" id="terms"></i></button>
+      </td>
+
       </div>
-    </section>
-
-    <!-- Import TensorFlow.js library -->
-    <script src="./tfjs.js" type="text/javascript"></script>
-    <!-- Load the coco-ssd model to use to recognize things in images -->
-    <script src="./coco-ssd.js"></script>
-    
-    <!-- Import the page's JavaScript to do some stuff -->
-    <script src="./script.js" defer></script>
   </body>
+      <!-- Import TensorFlow.js library -->
+      <script src="./tfjs.js" type="text/javascript"></script>
+      <!-- Load the coco-ssd model to use to recognize things in images -->
+      <script src="./coco-ssd.js"></script>
+      
+      <!-- Import the page's JavaScript to do some stuff -->
+      <script src="./script.js" defer></script>
+  
+  <link rel="stylesheet" href="./style.css">
 </html>

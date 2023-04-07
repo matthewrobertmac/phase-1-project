@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
 window.addEventListener("load", pageFullyLoaded, false);
 
 function theDomHasLoaded(e) {
-  fetch("http://localhost:3000/mlCards")
+  fetch("https://macfarlanefirebasehosting-default-rtdb.firebaseio.com/mlCards.json")
   .then((res) => res.json())
   .then((mlCards) => {
       let modelCards = mlCards
@@ -178,9 +178,9 @@ console.log(check)
   
   termsConditions.addEventListener("click", function(e) {
     e.preventDefault()
-    alert(`rrrr`)
+    alert(`Please agree to our Terms and conditions prior to submitting your personal information. We want to assure you that, regardless of where you are in the world, we will treat your data with the sovereignty it deserves and that we will comply with all local rules and regulations regarding data transmission and storage -- particularly, GDPR`)
   })
-console.log(`ffff`)
+console.log(`Please agree to our Terms and conditions prior to submitting your personal information. We want to assure you that, regardless of where you are in the world, we will treat your data with the sovereignty it deserves and that we will comply with all local rules and regulations regarding data transmission and storage -- particularly, GDPR`)
 let submitBttn = document.getElementById(`terms`)
 
 console.log(submitBttn)
@@ -194,5 +194,39 @@ submitBttn.addEventListener("click", (e) => {
   post.textContent = name; // setting the textcontent from the comment object
 
   let currentUser = document.getElementById(`textdiv`)
-  currentUser.append(post) 
+  termsConditions.append(post) 
 })
+
+/*
+form = document.getElementById("form")
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(e.target.id.value)
+  console.log(e.target.name.value)
+  console.log(e.target.description.value)
+  console.log(e.target.img_url.value)
+  console.log(e.target.gif_url.value)
+  console.log(e.target.use_cases.value)
+  fetch('https://macfarlanefirebasehosting-default-rtdb.firebaseio.com/mlCards.json', {
+    method: 'POST',
+    body: JSON.stringify({
+      mlCards: {
+        description: e.target.description.value
+        gif_url: e.target.gif_url.value
+        id: e.target.id.value
+        img_icon: e.target.img_icon.value
+        img_url: e.target.img_url.value
+        name: e.target.name.value
+      }
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+  
+})
+
+*/
